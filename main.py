@@ -27,7 +27,7 @@ def encoding():
             r_list[i] = r_list[i] + e2
             e3,e4 = adding_3_letters()
             r_list[i] = e3 + r_list[i] + e4
-    print(*r_list)
+    print("your encoded message is:",*r_list)
             
 def decoding():
     d_message = input("enter the string you want to be decoded: ")
@@ -41,7 +41,7 @@ def decoding():
             e5,e6 = remove_last_letter(d_list[i])
             d_list[i] = e5
             d_list[i] = e6 + d_list[i]
-    print(*d_list)
+    print("your decoded message is:",*d_list)
 
 while True:
     choice = int(input(("what action do you want to perform:\n1.Encode\n2.Decode\n3.End\n--> ")))
